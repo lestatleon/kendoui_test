@@ -1,5 +1,6 @@
 # Kendo UI Test
 
+> The code is not complete because of lack of time.
 
 ## Instructions
 
