@@ -1,20 +1,16 @@
 {
   "name": "kendoui_test",
   "version": "1.0.0",
-  "description": "testing kendo ui",
+  "description": "KendoUI Test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lestatleon/kendoui_test.git"
   },
-  "keywords": [],
-  "author": {
-    "name": "Hector Jonathan Leon Lopez",
-    "email": "jonathan_leonl@hotmail.com"
-  },
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lestatleon/kendoui_test/issues"

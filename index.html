@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kendo UI</title>
+
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Common Kendo UI CSS for web widgets and widgets for data visualization. -->
+    <link href="styles/kendo.common.min.css" rel="stylesheet" />
+
+    <!-- (Optional) RTL CSS for Kendo UI widgets for the web. Include only in right-to-left applications. -->
+    <link href="styles/kendo.rtl.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Default Kendo UI theme CSS for web widgets and widgets for data visualization. -->
+    <link href="styles/kendo.default.min.css" rel="stylesheet" />
+
+    <!-- (Optional) Kendo UI Hybrid CSS. Include only if you will use the mobile devices features. -->
+    <link href="styles/kendo.default.mobile.min.css" rel="stylesheet" type="text/css" />
+    
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Kendo UI combined JavaScript -->
+    <script src="js/kendo.all.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>Products</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <label>Search:</label><input type="text" id="search" value="" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <h4>Producst List</h4>
+                <div class="demo-section k-content wide">
+                    <div id="listView"></div>
+                </div>
+
+                <script type="text/x-kendo-template" id="template">
+                    <div class="product">
+                        <h3>#:Name#</h3>
+                        <h5>#:Category#</h5>
+                        <p>#:kendo.toString(Price, "c")#</p>
+                        <button class="addCart" data-id="#:Id#">Add Cart</button>
+                    </div>
+
+                </script>
+            </div>
+            <div class="col-xs-6">
+                <h4>Cart Items</h4>
+                <div class="demo-section k-content wide">
+                    <div id="listViewCart"></div>
+                </div>
+                <script type="text/x-kendo-template" id="templateCart">
+                    <div class="product">
+                        <h3>#:Name#</h3>
+                        <h5>#:Category#</h5>
+                        <p>#:kendo.toString(Price, "c")#</p>
+                        <button class="addCart" data-id="#:Id#">Remove</button>
+                    </div>
+
+                </script>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                texto
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+</body>
+
+</html>
